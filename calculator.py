@@ -29,7 +29,7 @@ if "stored_value" not in st.session_state:
 if "clear_clicks" not in st.session_state:
     st.session_state.clear_clicks = 0
 
-# Function to format result (remove .0 if not needed)
+# Function to format result 
 def format_result(result):
     return str(int(result)) if result == int(result) else str(result)
 
@@ -74,7 +74,7 @@ def calculate_result():
         st.session_state.stored_value = ""
         display.markdown(f"<div style='font-size: 40px; color: white;'>{result_str}</div>", unsafe_allow_html=True)
 
-# Display current input or 0 at start
+# Display current input
 if st.session_state.input_value:
     display.markdown(f"<div style='font-size: 40px; color: white;'>{st.session_state.input_value}</div>", unsafe_allow_html=True)
 else:
