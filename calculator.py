@@ -2,7 +2,7 @@ import streamlit as st
 import emoji
 
 # Title of the app
-st.title("Calculator")
+st.title("Calculator by Abdullah Khalid")
 
 # Display and Clear button row
 display_col, clear_col = st.columns([5, 1])
